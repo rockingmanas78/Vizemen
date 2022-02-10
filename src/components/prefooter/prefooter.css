@@ -1,0 +1,47 @@
+.prefooter{
+    height: 300px;
+    width: 100%;
+    background: #fff;
+}
+.prefooterPic{
+    width: 40%;
+    float: left;
+    height: 100%;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.prefooterImg{
+    height: 300px;
+}
+
+.prefooterInfo{
+    width: 60%;
+    float: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.prefooterInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    color: #fff;
+    background-color: rgb(43, 43, 43);
+}
+
+.prefooterInfoWrapper h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color:rgb(82, 58, 7);
+    font-size: 30px;
+}
+
+.prefooterInfoWrapper p{
+    font-size: 16px;
+}

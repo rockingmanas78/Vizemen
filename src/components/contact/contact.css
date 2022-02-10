@@ -1,0 +1,161 @@
+.container{
+    height: 100%;
+}
+.contact{
+    display: flex;
+    background-color: rgba(141, 141, 141, 0.25);
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
+    min-height: 60vh;
+    width: 100%;
+    padding: 100px 50px;
+    
+}
+
+.contactBox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Varela Round', serif;
+    padding-left: 10vw;
+}
+
+
+
+.contactBoxHeading h1{
+    color: rgb(238, 238, 238);
+    font-size: 70px;
+    font-family: 'Varela', serif;
+}
+.contactBoxHeading h2{
+    color: rgb(210, 210, 208);
+    font-size: 35px;
+    font-family: 'Noto Sans', serif;
+}
+
+.contactBoxHeading p{
+    padding: 10px 0;
+    color: rgb(204, 214, 214);
+    font-size: 15px;
+    
+}
+
+.contactBoxList{
+    list-style-type: disc;
+    color: rgb(219, 219, 219);
+    font-size: 12px;
+}
+.contactBoxFooter{
+    color: rgb(239, 239, 239);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.inputField{
+    border: 1px solid aliceblue;
+    min-height: 30px;
+    margin: 5px;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: 1px 1px 3px black;
+}
+.contactFormButton{
+    border: 1px solid aliceblue;
+    min-height: 30px;
+    margin: 5px;
+    padding: 10px;
+    background-color: transparent;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.contactFormButton:hover{
+    background-color: whitesmoke;
+}
+
+.ContactImg{
+    z-index: -9999;
+    width: 100%;
+    object-fit: cover;
+    height: 60vh;
+    position: absolute;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+      filter: blur(7px);
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+@media (max-width: 998px){
+    .contactBox{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 698px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 80vh;
+    }
+
+    .contactBox{
+        width: 100%;
+        margin: 20px;
+    }
+    .contactForm{
+        width: 80vw;
+        align-self: center;
+        margin: 20px;
+    }
+    .ContactImg{
+        height: 80vh;
+    }
+    
+}
+
+@media(max-width: 356px){
+
+    .contact{
+        padding: 0px;
+        height: 82vh;
+    }
+    .contactBoxHeading h1{
+        font-size: 30px;
+        
+    }
+    .contactBoxHeading h2{
+        font-size: 15px;
+    }
+    
+    .contactBoxHeading p{
+        font-size: 10px;
+        
+    }
+    
+    .contactBoxList{
+        font-size: 8px;
+        padding: 10px 0;
+    }
+    .contactBoxFooter{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .ContactImg{
+        height: 82vh;
+    }
+
+    .inputField{
+        min-height: 10px;
+        margin: 5px;
+        padding: 5px;
+        
+    }
+}

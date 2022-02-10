@@ -1,0 +1,8 @@
+.home{
+    display: flex;
+    margin-top: -10px;
+    background: linear-gradient(rgb(233, 233, 233),rgb(65, 64, 64));
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
+    min-height: 100vh;
+}
